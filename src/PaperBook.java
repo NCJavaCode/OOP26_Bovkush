@@ -1,7 +1,7 @@
-public static class paperBook extends Book{
+public class PaperBook extends Book{
     private int pages;
 
-    public paperBook(String title, String author, int year) {
+    public PaperBook(String title, String author, int year) {
         super(title, author, year);
     }
 
@@ -12,18 +12,12 @@ public static class paperBook extends Book{
     public void setPages(int pages) {
         this.pages = pages;
     }
-}
-public void readBook() {
-    System.out.println("Читаємо паперову книгу");
-}
-public static void main(String[] args) {
+    public void readBook(Book book) {
+        System.out.println("Читаємо паперову книгу");
 
-    Book book1 = new Book("Кобзар", "Тарас Шевченко", 1840);
-    Book book2 = new paperBook("Кобзар", "Тарас Шевченко", 1840);
-
-    book1.readBook();
-    book2.readBook();
+    }
 }
+
 
 
 

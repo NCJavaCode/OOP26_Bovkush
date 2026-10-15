@@ -15,12 +15,10 @@ public class Ebook extends Book {
   public void showInfo() {
     System.out.println("Це електронна книга");}
 
-  //Демонстрація
-  public static void main(String[] args) {
 
-    Ebook book = new Ebook("Кобзар", "Тарас Шевченко", 1840);
-
-    book.showInfo();
-    book.showInfo("PDF");
+  @Override
+  public void readBook() {
+    System.out.println("читання єлектроної кнги");
   }
 }
+
