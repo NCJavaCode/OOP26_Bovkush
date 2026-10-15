@@ -26,4 +26,7 @@ public class Book {
             this.year = year;
         }
     }
+    public void readBook() {
+        System.out.println("Читаємо звичайну книгу");
+    }
 }
