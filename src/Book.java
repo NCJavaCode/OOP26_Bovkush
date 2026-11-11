@@ -4,9 +4,9 @@ public class Book {
     private int year;
 
     public Book(String title, String author, int year) {
-        this.title = title;
-        this.author = author;
-        this.year = year;
+        this.title = this.title;
+        this.author = this.author;
+        this.year = this.year;
     }
 
     public String getTitle() {
@@ -28,5 +28,14 @@ public class Book {
     }
     public void readBook() {
         System.out.println("Читаємо звичайну книгу");
+    }
+
+    public void setTitle(String кобзар) {
+    }
+
+    public void showInfo() {
+        System.out.println("Назва: " + title);
+        System.out.println("Автор: " + author);
+        System.out.println("Рік: " + year);
     }
 }
